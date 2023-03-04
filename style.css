@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.mere{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    color: #000; 
+}
+
+.mere .container
+{
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px; 
+}
+
+.mere .container .div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mere .container .div .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mere .container .div .card-container a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.mere .container .div .card-container  .card{
+    border: 3px solid #000;
+    border-radius: 20px;
+    margin: 0 20px;
+    height: 200px;
+    width: 100%;
+    max-width: 30%;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mere .card-icon{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.mere .card-icon img{
+    height: 100%;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.mere .card-text{
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+}
+
+.mere .card-text p{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+}
+
+.mere .hide{
+    display: none !important; 
+}
+
+.mere .prev{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    max-width: 150px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .mere .prev {
+        font-size: 14px;
+    }
+
+
+    .mere .card-text p {
+        font-size: 14px;
+    }
+
+    .mere .card-container .card {
+        margin: 0;
+        height: 150px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.mere {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+}
+
+.mere .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px;
+}
+
+.mere .container .div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mere .div .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mere .div .card-container a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.mere .card-container .card {
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0 20px;
+    height: 200px;
+    width: 100%;
+    max-width: 30%;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mere .card-icon {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.mere .card-icon img {
+    height: 100%;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.mere .card-text {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+}
+
+.mere .card-text p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+}
+
+
+
+.mere .hide {
+    display: none !important;
+}
+
+.mere .prev {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    max-width: 150px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media only screen and (max-width: 780px) {
+    .mere .prev {
+        font-size: 14px;
+    }
+
+    
+
+    .mere .card-text p {
+        font-size: 14px;
+    }
+
+    .mere .card-container .card {
+        margin: 0;
+        height: 150px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

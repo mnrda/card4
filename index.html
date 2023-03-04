@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="mere">
+    <div class="container">
+<!--Premiere div visible-->
+        <div id="div1" class="div">
+            <div class="card-container">
+                <!--premiere carte-->
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="./img/fitness.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Coaching en ligne</p>
+                    </div>
+                </div>
+                    <!--deuxieme carte-->
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="img/home.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Coaching à domicile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--deuxieme div1 hidden-->
+        <div id="div21" class="div hide">
+            <div class="card-container">
+                <a href="video.html" class="card">
+                    <div class="card-icon">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Coaching video</p>
+                    </div>
+                </a>
+                <a href="alimentaire.html" class="card">
+                    <div class="card-icon">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Rééquilibrage alimentaire</p>
+                    </div>
+                </a>
+            </div>
+            <button type="button" class="prev">Retour</button>
+        </div>
+
+
+
+<!--deuxieme div2 hidden-->
+        <div id="div22" class="div hide">
+            <div class="card-container">
+                <a href="deplace.html" class="card">
+                    <div class="card-icon">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Je me déplace sur Genèse, Coppet et Nyon</p>
+                    </div>
+                </a>
+            </div>
+            <button type="button" class="prev">Retour</button>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    let div_1 = document.querySelector('.mere #div1');
+        let div_21 = document.querySelector('.mere  #div21');
+        let div_22 = document.querySelector('.mere  #div22');
+        let prevbtn = document.querySelectorAll('.mere  .prev');
+        let carddiv1 = div_1.querySelectorAll('.card');
+
+        carddiv1[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            div_1.classList.add('hide');
+            div_21.classList.remove('hide');
+        });
+
+        carddiv1[1].addEventListener('click', function(e) {
+            e.preventDefault();
+            div_1.classList.add('hide');
+            div_22.classList.remove('hide');
+        });
+
+        prevbtn.forEach((elt) => {
+            elt.addEventListener('click', function(e) {
+                e.preventDefault();
+                div_21.classList.add('hide');
+                div_22.classList.add('hide');
+                div_1.classList.remove('hide');
+            })
+        })
+
+</script>
+</body>
+</html>
